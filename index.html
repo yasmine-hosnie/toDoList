@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container-main">
+        <header>
+            <h2>My To-Do List</h2>
+            <button id="mode-toggle">🌙 Dark Mode</button>
+        </header>
+
+        <div class="container">
+            <!-- Add Task Form -->
+            <div class="form">
+                <input type="text" class="input" placeholder="Add new task..." />
+                <input type="submit" value="Add Task" class="add" />
+            </div>
+
+            <!-- Search -->
+            <div class="search">
+                <input type="text" id="search" placeholder="Search tasks...">
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="completed" class="filter-btn">Completed</button>
+                <button data-filter="pending" class="filter-btn">Pending</button>
+                <button id="clear-all">Clear All</button>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <p><span id="completed-count">0</span> Completed From <span id="task-count">0</span> tasks</p>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <!-- Tasks -->
+            <div class="tasks"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
