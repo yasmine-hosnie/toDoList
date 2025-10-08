@@ -33,4 +33,3 @@ It allows users to manage daily tasks with filtering, search, progress tracking,
 | **JavaScript (Vanilla)** | Core logic and interactivity |
 | **LocalStorage** | Persistent data saving |
 | **Vercel** | Hosting and deployment |
---
